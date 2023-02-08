@@ -1,3 +1,4 @@
+import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -7,13 +8,10 @@ public class RegressTests {
     @Test
     void createUserTest() {
         String data = "{ \"name\": \"morpheus\", \"job\": \"leader\" }";
-
-        given()
-                .log().uri()
-                .contentType(JSON)
+        Specs.request
                 .body(data)
                 .when()
-                .post("https://reqres.in/api/users")
+                .post("/users")
                 .then()
                 .log().status()
                 .log().body()
@@ -24,60 +22,46 @@ public class RegressTests {
     @Test
     void updateUserTest() {
         String data = "{ \"name\": \"alfa\"}";
-        given()
-                .log().uri()
-                .contentType(JSON)
+        Specs.request
                 .body(data)
                 .when()
-                .patch("https://reqres.in/api/users/978")
+                .patch("/users/447")
                 .then()
                 .log().status()
                 .log().body()
-                .statusCode(200)
+                .spec(Specs.responseSpec)
                 .body("name", is("alfa"));
     }
 
     @Test
     void deleteUserTest() {
-        String data = "{ \"name\": \"morpheus\", \"job\": \"leader\" }";
-        given()
-                .log().uri()
-                .contentType(JSON)
-                .body(data)
+        String data = "{ \"name\": \"alfa\", \"job\": \"leader\" }";
+        Specs.request
                 .when()
-                .delete("https://reqres.in/api/users/978")
+                .delete("users/447")
                 .then()
-                .log().status()
                 .log().body()
                 .statusCode(204);
     }
 
     @Test
     void listUsersTest() {
-
-        given()
-                .log().uri()
-                .contentType(JSON)
+        Specs.request
                 .when()
-                .get("https://reqres.in/api/users?page=2")
+                .get("users?page=3")
                 .then()
-                .log().status()
                 .log().body()
-                .statusCode(200)
+                .spec(Specs.responseSpec)
                 .body("total", is(12));
     }
     @Test
     void singleUserTest() {
-
-        given()
-                .log().uri()
-                .contentType(JSON)
+        Specs.request
                 .when()
-                .get("https://reqres.in/api/users/7")
+                .get("/users/7")
                 .then()
-                .log().status()
                 .log().body()
-                .statusCode(200)
+                .spec(Specs.responseSpec)
                 .body("data.first_name", is("Michael"));
     }
 }
