@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="add spec">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Specs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lombok/RequestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lombok/ResponseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lombok/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lombok/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegressTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +30,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW_18_Rest_Api" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -57,10 +69,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.RegressTests.updateUserTest">
+  <component name="RunManager" selected="Gradle.RegressTests.singleUserTest">
     <configuration name="RegressTests.createUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -178,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegressTests.updateUserTest" />
-        <item itemvalue="Gradle.RegressTests.createUserTest" />
         <item itemvalue="Gradle.RegressTests.singleUserTest" />
+        <item itemvalue="Gradle.RegressTests.updateUserTest" />
         <item itemvalue="Gradle.RegressTests.listUsersTest" />
         <item itemvalue="Gradle.RegressTests.deleteUserTest" />
+        <item itemvalue="Gradle.RegressTests.createUserTest" />
       </list>
     </recent_temporary>
   </component>

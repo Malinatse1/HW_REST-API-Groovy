@@ -1,13 +1,24 @@
 import io.restassured.http.ContentType;
+import lombok.RequestData;
+import lombok.ResponseData;
+import lombok.User;
+import lombok.UserData;
 import org.junit.jupiter.api.Test;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 import static io.restassured.http.ContentType.JSON;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class RegressTests {
+    TestData testData = new TestData();
+
     @Test
     void createUserTest() {
-        String data = "{ \"name\": \"morpheus\", \"job\": \"leader\" }";
+        RequestData data = new RequestData();
+        data.setName(testData.firstName);
+        data.setJob(testData.job);
         Specs.request
                 .body(data)
                 .when()
@@ -16,12 +27,16 @@ public class RegressTests {
                 .log().status()
                 .log().body()
                 .statusCode(201)
-                .body("name", is("morpheus"));
+                .extract().as(ResponseData.class);
+        assertEquals("Michael", testData.firstName);
+        assertEquals("QA", testData.job);
     }
+
 
     @Test
     void updateUserTest() {
-        String data = "{ \"name\": \"alfa\"}";
+        RequestData data = new RequestData();
+        data.setName("Alfred");
         Specs.request
                 .body(data)
                 .when()
@@ -30,12 +45,14 @@ public class RegressTests {
                 .log().status()
                 .log().body()
                 .spec(Specs.responseSpec)
-                .body("name", is("alfa"));
+                .body("name", is("Alfred"));
     }
 
     @Test
     void deleteUserTest() {
-        String data = "{ \"name\": \"alfa\", \"job\": \"leader\" }";
+        RequestData data = new RequestData();
+        data.setName(testData.firstName);
+        data.setJob(testData.job);
         Specs.request
                 .when()
                 .delete("users/447")
@@ -54,6 +71,7 @@ public class RegressTests {
                 .spec(Specs.responseSpec)
                 .body("total", is(12));
     }
+
     @Test
     void singleUserTest() {
         Specs.request
@@ -62,6 +80,6 @@ public class RegressTests {
                 .then()
                 .log().body()
                 .spec(Specs.responseSpec)
-                .body("data.first_name", is("Michael"));
+                .body("data.id", is(7));
     }
 }
