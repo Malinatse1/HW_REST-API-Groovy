@@ -1,13 +1,7 @@
 import io.restassured.http.ContentType;
 import lombok.RequestData;
 import lombok.ResponseData;
-import lombok.User;
-import lombok.UserData;
 import org.junit.jupiter.api.Test;
-
-import static io.restassured.RestAssured.*;
-import static io.restassured.http.ContentType.JSON;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
