@@ -13,4 +13,5 @@ public class User {
     @JsonProperty("last_name")
     private String lastName;
     private Integer total;
+    private String name;
 }

@@ -2,9 +2,11 @@ import io.restassured.http.ContentType;
 import lombok.RequestData;
 import lombok.ResponseData;
 import org.junit.jupiter.api.Test;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class RegressTests {
     TestData testData = new TestData();
 
@@ -13,7 +15,7 @@ public class RegressTests {
         RequestData data = new RequestData();
         data.setName(testData.firstName);
         data.setJob(testData.job);
-        Specs.request
+        ResponseData responseData = Specs.request
                 .body(data)
                 .when()
                 .post("/users")
@@ -22,16 +24,16 @@ public class RegressTests {
                 .log().body()
                 .statusCode(201)
                 .extract().as(ResponseData.class);
-        assertEquals("Michael", testData.firstName);
-        assertEquals("QA", testData.job);
+        assertEquals(responseData.getName(), testData.firstName);
+        assertEquals(responseData.getJob(), testData.job);
     }
 
 
     @Test
-    void updateUserTest() {
+    void updateUserTestWithLombok() {
         RequestData data = new RequestData();
         data.setName("Alfred");
-        Specs.request
+        ResponseData responseData = Specs.request
                 .body(data)
                 .when()
                 .patch("/users/447")
@@ -39,7 +41,8 @@ public class RegressTests {
                 .log().status()
                 .log().body()
                 .spec(Specs.responseSpec)
-                .body("name", is("Alfred"));
+                .extract().as(ResponseData.class);
+        assertEquals(responseData.getName(),("Alfred"));
     }
 
     @Test
@@ -67,13 +70,17 @@ public class RegressTests {
     }
 
     @Test
-    void singleUserTest() {
-        Specs.request
+    void singleUserTestWithGroovy() {
+        given()
+                .spec(Specs.request)
                 .when()
-                .get("/users/7")
-                .then()
-                .log().body()
-                .spec(Specs.responseSpec)
-                .body("data.id", is(7));
+                .get("/users")
+                .then().log().body()
+//                .spec(Specs.responseSpec)
+//                .body("data.id", is(7));
+                .body("data.findAll{it.id == 3}.last_name", hasItem("Wong"))
+                .body("data.findAll{it.id == 3}.first_name", hasItem("Emma"))
+                .body("data.findAll{it.id == 3}.email", hasItem("emma.wong@reqres.in"));
+
     }
 }

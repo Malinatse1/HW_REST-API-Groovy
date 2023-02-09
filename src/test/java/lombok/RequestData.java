@@ -5,5 +5,5 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RequestData {
     public String name, job;
-    public Integer total;
+    public Integer total,id;
 }
