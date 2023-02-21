@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="add tests">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/tpl/request.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/tpl/response.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/tpl/request.ftl.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/tpl/response.ftl.url" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +72,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test" />
+      <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\java\helpers" />
+      <recent name="C:\QA GURU\HW_REST-API-Groovy\notifications" />
+      <recent name="C:\QA GURU\HW_REST-API-Groovy" />
       <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\java\resources\tpl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -239,7 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676972563257</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add tests">
+      <created>1676973576595</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676973576595</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add tests">
+      <created>1676974120180</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676974120180</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
