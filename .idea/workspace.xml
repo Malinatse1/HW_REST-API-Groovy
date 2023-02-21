@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="fix tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/CustomApiListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/RequestDataModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/ResponseDataModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/UserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/tpl/request.ftl.url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/tpl/response.ftl.url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegressTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lombok/RequestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lombok/RequestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lombok/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lombok/ResponseData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lombok/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lombok/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegressTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Specs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Specs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,18 +68,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.RegressTests.singleUserTestWithGroovy">
-    <configuration name="RegressTests.deleteUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\java\resources\tpl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="models" />
+      <recent name="tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.RegressTestsWithModel">
+    <configuration name="RegressExtendedTests.singleUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -85,7 +101,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegressTests.deleteUserTest&quot;" />
+            <option value="&quot;tests.RegressExtendedTests.singleUserTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -95,7 +111,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegressTests.listUsersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegressTestsWithModel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -108,7 +124,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegressTests.listUsersTest&quot;" />
+            <option value="&quot;tests.RegressTestsWithModel&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -118,7 +134,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegressTests.singleUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegressTestsWithModel.createUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -131,7 +147,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegressTests.singleUserTest&quot;" />
+            <option value="&quot;tests.RegressTestsWithModel.createUserTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -141,7 +157,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegressTests.singleUserTestWithGroovy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegressTestsWithModel.listUsersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -154,7 +170,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegressTests.singleUserTestWithGroovy&quot;" />
+            <option value="&quot;tests.RegressTestsWithModel.listUsersTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -164,7 +180,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegressTests.updateUserTestWithLombok" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegressTestsWithModel.singleUserTestWithGroovy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -177,7 +193,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegressTests.updateUserTestWithLombok&quot;" />
+            <option value="&quot;tests.RegressTestsWithModel.singleUserTestWithGroovy&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegressTests.singleUserTestWithGroovy" />
-        <item itemvalue="Gradle.RegressTests.singleUserTest" />
-        <item itemvalue="Gradle.RegressTests.deleteUserTest" />
-        <item itemvalue="Gradle.RegressTests.listUsersTest" />
-        <item itemvalue="Gradle.RegressTests.updateUserTestWithLombok" />
+        <item itemvalue="Gradle.RegressTestsWithModel" />
+        <item itemvalue="Gradle.RegressTestsWithModel.listUsersTest" />
+        <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy" />
+        <item itemvalue="Gradle.RegressTestsWithModel.createUserTest" />
+        <item itemvalue="Gradle.RegressExtendedTests.singleUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675858295096</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix tests">
+      <created>1675947715981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675947715981</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,7 +267,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/RegressTests.java</url>
-          <line>79</line>
+          <line>84</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
