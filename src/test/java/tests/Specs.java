@@ -5,6 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
+import static helpers.CustomApiListener.withCustomTemplates;
 import static io.restassured.RestAssured.with;
 
 
@@ -13,6 +14,7 @@ public class Specs {
             .baseUri("https://reqres.in")
             .basePath("/api")
             .log().all()
+            .filter(withCustomTemplates())
             .contentType(ContentType.JSON);
 
     public static ResponseSpecification responseSpec = new ResponseSpecBuilder()

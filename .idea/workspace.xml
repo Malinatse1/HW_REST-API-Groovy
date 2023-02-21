@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="add tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources.tpl/request.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/request.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources.tpl/response.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/response.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Specs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Specs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +70,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\resources\tlp" />
+      <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\resources\tlp2" />
       <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test" />
       <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\java\helpers" />
       <recent name="C:\QA GURU\HW_REST-API-Groovy\notifications" />
-      <recent name="C:\QA GURU\HW_REST-API-Groovy" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="models" />
@@ -272,7 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676975280752</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add tests">
+      <created>1676975794089</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676975794089</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add tests">
+      <created>1676976124511</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676976124511</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
