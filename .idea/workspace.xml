@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="fix tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegressTestsWithModel">
+  <component name="RunManager" selected="Gradle.RegressTestsWithModel.deleteUserTest">
     <configuration name="RegressTestsWithModel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -105,7 +105,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegressTestsWithModel.createUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegressTestsWithModel.deleteUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -118,7 +118,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.RegressTestsWithModel.createUserTest&quot;" />
+            <option value="&quot;tests.RegressTestsWithModel.deleteUserTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegressTestsWithModel.deleteUserTest" />
         <item itemvalue="Gradle.RegressTestsWithModel" />
         <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy (1)" />
         <item itemvalue="Gradle.RegressTestsWithModel.updateUserTestWithLombok" />
         <item itemvalue="Gradle.RegressTestsWithModel.listUsersTest" />
-        <item itemvalue="Gradle.RegressTestsWithModel.createUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677077764580</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix tests">
+      <created>1677078104476</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677078104476</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">

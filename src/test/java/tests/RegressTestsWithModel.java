@@ -25,6 +25,7 @@ public class RegressTestsWithModel {
                 .log().status()
                 .log().body()
                 .statusCode(201)
+                .spec(Specs.responseSpec)
                 .extract().as(ResponseDataModel.class);
         assertEquals(response.getName(), testData.firstName);
         assertEquals(response.getJob(), testData.job);
@@ -69,6 +70,7 @@ public class RegressTestsWithModel {
                 .log().body()
                 .spec(Specs.responseSpec)
                 .body("total", is(12));
+
     }
 
     @Test
