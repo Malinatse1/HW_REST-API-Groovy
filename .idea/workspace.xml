@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="add tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/RequestDataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/RequestDataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Specs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Specs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,29 +84,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.RegressTestsWithModel">
-    <configuration name="RegressExtendedTests.singleUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.RegressExtendedTests.singleUserTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="RegressTestsWithModel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -173,7 +153,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegressTestsWithModel.singleUserTestWithGroovy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegressTestsWithModel.singleUserTestWithGroovy (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -196,13 +176,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="RegressTestsWithModel.updateUserTestWithLombok" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.RegressTestsWithModel.updateUserTestWithLombok&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy" />
+        <item itemvalue="Gradle.RegressTestsWithModel" />
+        <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy (1)" />
+        <item itemvalue="Gradle.RegressTestsWithModel.updateUserTestWithLombok" />
         <item itemvalue="Gradle.RegressTestsWithModel.listUsersTest" />
         <item itemvalue="Gradle.RegressTestsWithModel.createUserTest" />
-        <item itemvalue="Gradle.RegressTestsWithModel" />
-        <item itemvalue="Gradle.RegressExtendedTests.singleUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -236,8 +239,18 @@
       <option name="project" value="LOCAL" />
       <updated>1675947715981</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix path tests">
+      <created>1677065367659</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677065367659</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ftl" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -253,7 +266,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add spec" />
     <MESSAGE value="fix tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix tests" />
+    <MESSAGE value="fix path tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix path tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

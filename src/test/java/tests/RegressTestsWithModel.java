@@ -3,7 +3,7 @@ import lombok.ResponseDataModel;
 import models.RequestDataModel;
 import org.junit.jupiter.api.Test;
 
-import static helpers.CustomApiListener.withCustomTemplates;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.is;
