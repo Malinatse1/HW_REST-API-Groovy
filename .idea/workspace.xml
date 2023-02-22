@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="fix tests">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="fix path tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/CustomApiListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/CustomApiListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lombok/RequestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lombok/RequestData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lombok/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lombok/ResponseData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/RequestDataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/RequestDataModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/ResponseDataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/ResponseDataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lombok/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lombok/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lombok/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lombok/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/models/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/tpl/request.ftl.url" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/tpl/request.ftl.url" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/tpl/response.ftl.url" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/tpl/response.ftl.url" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegressTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="models" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -84,30 +90,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegressTestsWithModel.singleUserTestWithGroovy">
-    <configuration name="RegressExtendedTests.singleUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.RegressExtendedTests.singleUserTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.RegressTestsWithModel">
     <configuration name="RegressTestsWithModel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -200,13 +183,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="RegressTests.singleUserTestWithGroovy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.RegressTests.singleUserTestWithGroovy&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy" />
         <item itemvalue="Gradle.RegressTestsWithModel" />
+        <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy" />
+        <item itemvalue="Gradle.RegressTests.singleUserTestWithGroovy" />
         <item itemvalue="Gradle.RegressTestsWithModel.listUsersTest" />
         <item itemvalue="Gradle.RegressTestsWithModel.createUserTest" />
-        <item itemvalue="Gradle.RegressExtendedTests.singleUserTest" />
       </list>
     </recent_temporary>
   </component>

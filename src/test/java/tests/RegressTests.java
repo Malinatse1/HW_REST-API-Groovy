@@ -77,11 +77,11 @@ public class RegressTests {
                 .when()
                 .get("/users")
                 .then().log().body()
-//                .spec(Specs.responseSpec)
-//                .body("data.id", is(7));
-                .body("data.findAll{it.id == 3}.last_name", hasItem("Wong"))
-                .body("data.findAll{it.id == 3}.first_name", hasItem("Emma"))
-                .body("data.findAll{it.id == 3}.email", hasItem("emma.wong@reqres.in"));
+                .spec(Specs.responseSpec)
+                .body("data.id", is(6));
+//                .body("data.findAll{it.id == 3}.last_name", hasItem("Wong"))
+//                .body("data.findAll{it.id == 3}.first_name", hasItem("Emma"))
+//                .body("data.findAll{it.id == 3}.email", hasItem("emma.wong@reqres.in"));
 
     }
 }
