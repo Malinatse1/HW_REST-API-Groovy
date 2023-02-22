@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="fix path tests">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/HW_18_Rest_Api.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/HW_18_Rest_Api.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/CustomApiListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/CustomApiListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Specs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Specs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/tlp/request.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/tlp/request.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/tlp/response.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/tlp/response.ftl" afterDir="false" />
+    <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="fix tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677065367659</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix tests">
+      <created>1677077764580</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677077764580</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -275,9 +270,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add spec" />
-    <MESSAGE value="fix tests" />
     <MESSAGE value="fix path tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix path tests" />
+    <MESSAGE value="fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
