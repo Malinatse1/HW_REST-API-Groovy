@@ -25,7 +25,6 @@ public class RegressTestsWithModel {
                 .log().status()
                 .log().body()
                 .statusCode(201)
-                .spec(Specs.responseSpec)
                 .extract().as(ResponseDataModel.class);
         assertEquals(response.getName(), testData.firstName);
         assertEquals(response.getJob(), testData.job);
