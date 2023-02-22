@@ -24,6 +24,7 @@ public class RegressTestsWithModel {
                 .then()
                 .log().status()
                 .log().body()
+                .spec(Specs.responseSpec)
                 .statusCode(201)
                 .extract().as(ResponseDataModel.class);
         assertEquals(response.getName(), testData.firstName);
@@ -43,6 +44,7 @@ public class RegressTestsWithModel {
                 .log().status()
                 .log().body()
                 .spec(Specs.responseSpec)
+                .statusCode(200)
                 .extract().as(ResponseDataModel.class);
         assertEquals(response.getName(),("Alfred"));
     }
@@ -57,6 +59,7 @@ public class RegressTestsWithModel {
                 .delete("users/447")
                 .then()
                 .log().body()
+                .spec(Specs.responseSpec)
                 .statusCode(204);
     }
 
@@ -68,6 +71,7 @@ public class RegressTestsWithModel {
                 .then()
                 .log().body()
                 .spec(Specs.responseSpec)
+                .statusCode(200)
                 .body("total", is(12));
 
     }
@@ -80,6 +84,7 @@ public class RegressTestsWithModel {
                 .get("/users/3")
                 .then().log().body()
                 .spec(Specs.responseSpec)
+                .statusCode(200)
                 .body("data.last_name", is("Wong"))
                 .body("data.first_name", is("Emma"))
                 .body("data.email", is("emma.wong@reqres.in"));

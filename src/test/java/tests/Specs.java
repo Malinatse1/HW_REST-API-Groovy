@@ -28,7 +28,6 @@ public class Specs {
     public static ResponseSpecification responseSpec = new ResponseSpecBuilder()
             .log(STATUS)
             .log(BODY)
-            .expectStatusCode(200)
             . build();
 
 }
