@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="add tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Specs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Specs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +45,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -69,11 +73,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\resources\tlp" />
-      <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\resources\tlp2" />
-      <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test" />
-      <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\java\helpers" />
-      <recent name="C:\QA GURU\HW_REST-API-Groovy\notifications" />
+      <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\java\resources\tpl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="models" />
@@ -198,10 +198,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegressTestsWithModel" />
-        <item itemvalue="Gradle.RegressTestsWithModel.listUsersTest" />
         <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy" />
+        <item itemvalue="Gradle.RegressTestsWithModel.listUsersTest" />
         <item itemvalue="Gradle.RegressTestsWithModel.createUserTest" />
+        <item itemvalue="Gradle.RegressTestsWithModel" />
         <item itemvalue="Gradle.RegressExtendedTests.singleUserTest" />
       </list>
     </recent_temporary>
@@ -236,56 +236,7 @@
       <option name="project" value="LOCAL" />
       <updated>1675947715981</updated>
     </task>
-    <task id="LOCAL-00004" summary="add tests">
-      <created>1676972563257</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1676972563257</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add tests">
-      <created>1676973576595</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1676973576595</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add tests">
-      <created>1676974120180</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1676974120180</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add tests">
-      <created>1676974870636</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1676974870636</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add tests">
-      <created>1676975280752</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1676975280752</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add tests">
-      <created>1676975794089</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1676975794089</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add tests">
-      <created>1676976124511</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1676976124511</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,8 +253,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add spec" />
     <MESSAGE value="fix tests" />
-    <MESSAGE value="add tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
