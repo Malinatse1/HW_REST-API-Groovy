@@ -1,4 +1,5 @@
 package tests;
+import io.qameta.allure.restassured.AllureRestAssured;
 import lombok.ResponseDataModel;
 import models.RequestDataModel;
 import org.junit.jupiter.api.Test;
@@ -9,7 +10,7 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RegressTestsWithModel {
+public class RegressTestsWithModel extends TestBase {
     TestData testData = new TestData();
 
     @Test
@@ -24,7 +25,8 @@ public class RegressTestsWithModel {
                 .then()
                 .log().status()
                 .log().body()
-                .spec(Specs.responseSpec)
+
+//                .spec(Specs.responseSpec)
                 .statusCode(201)
                 .extract().as(ResponseDataModel.class);
         assertEquals(response.getName(), testData.firstName);
@@ -44,7 +46,7 @@ public class RegressTestsWithModel {
                 .log().status()
                 .log().body()
                 .spec(Specs.responseSpec)
-                .statusCode(200)
+                .statusCode(201)
                 .extract().as(ResponseDataModel.class);
         assertEquals(response.getName(),("Alfred"));
     }

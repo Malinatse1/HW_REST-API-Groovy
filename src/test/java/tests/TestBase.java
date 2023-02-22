@@ -7,10 +7,11 @@ import org.junit.jupiter.api.BeforeAll;
 import static helpers.CustomApiListener.withCustomTemplates;
 
 public class TestBase {
+    RegressTestsWithModel regressTestsWithModel = new RegressTestsWithModel();
     @BeforeAll
     public static void setUp() {
+        RestAssured.filters(new AllureRestAssured());
         RestAssured.baseURI = "https://reqres.in";
         RestAssured.basePath = "/api";
-        RestAssured.filters(new AllureRestAssured());
     }
 }
