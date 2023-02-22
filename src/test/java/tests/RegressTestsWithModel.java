@@ -76,11 +76,11 @@ public class RegressTestsWithModel {
         given()
                 .spec(Specs.request)
                 .when()
-                .get("/users")
+                .get("/users/3")
                 .then().log().body()
-                .body("data.findAll{it.id == 3}.last_name", hasItem("Wong"))
-                .body("data.findAll{it.id == 3}.first_name", hasItem("Emma"))
-                .body("data.findAll{it.id == 3}.email", hasItem("emma.wong@reqres.in"));
-
+                .spec(Specs.responseSpec)
+                .body("data.last_name", is("Wong"))
+                .body("data.first_name", is("Emma"))
+                .body("data.email", is("emma.wong@reqres.in"));
     }
 }

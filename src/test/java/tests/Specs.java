@@ -1,6 +1,8 @@
 package tests;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
@@ -18,7 +20,7 @@ public class Specs {
             .log().uri()
             .log().headers()
             .log().body()
-            .filter(withCustomTemplates())
+            .filter(new AllureRestAssured())
             .contentType(JSON)
             .baseUri("https://reqres.in")
             .basePath("/api");
