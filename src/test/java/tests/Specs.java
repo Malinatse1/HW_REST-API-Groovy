@@ -20,7 +20,7 @@ public class Specs {
             .log().uri()
             .log().headers()
             .log().body()
-            .filter(new AllureRestAssured())
+//            .filter(new AllureRestAssured())
             .contentType(JSON)
             .baseUri("https://reqres.in")
             .basePath("/api");

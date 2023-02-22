@@ -10,7 +10,8 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RegressTestsWithModel extends TestBase {
+public class RegressTestsWithModel extends TestBase  {
+
     TestData testData = new TestData();
 
     @Test
@@ -46,7 +47,7 @@ public class RegressTestsWithModel extends TestBase {
                 .log().status()
                 .log().body()
                 .spec(Specs.responseSpec)
-                .statusCode(201)
+                .statusCode(200)
                 .extract().as(ResponseDataModel.class);
         assertEquals(response.getName(),("Alfred"));
     }
