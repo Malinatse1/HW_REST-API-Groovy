@@ -1,5 +1,5 @@
 package tests;
-import lombok.ResponseDataModel;
+import models.ResponseDataModel;
 import models.RequestDataModel;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;

@@ -8,6 +8,6 @@ import lombok.User;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserData {
-    @JsonProperty("data")
-    private User user;
+//    @JsonProperty("data")
+//    private User user;
 }

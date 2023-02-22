@@ -1,10 +1,10 @@
-package lombok;
+package models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ResponseDataModel {
-    String name, job, createdAt;
-    Integer total,id;
+    String name, job;
 }

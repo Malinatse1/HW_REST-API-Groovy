@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="fix tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/CustomApiListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/RequestDataModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/ResponseDataModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/UserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/tpl/request.ftl.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/tpl/response.ftl.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegressTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Specs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Specs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/CustomApiListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/CustomApiListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lombok/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lombok/ResponseData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/RequestDataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/RequestDataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/ResponseDataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/ResponseDataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegressTestsWithModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegressTestsWithModel">
+  <component name="RunManager" selected="Gradle.RegressTestsWithModel.singleUserTestWithGroovy">
     <configuration name="RegressExtendedTests.singleUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -205,9 +202,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy" />
         <item itemvalue="Gradle.RegressTestsWithModel" />
         <item itemvalue="Gradle.RegressTestsWithModel.listUsersTest" />
-        <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy" />
         <item itemvalue="Gradle.RegressTestsWithModel.createUserTest" />
         <item itemvalue="Gradle.RegressExtendedTests.singleUserTest" />
       </list>

@@ -7,5 +7,4 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RequestDataModel {
     public String name, job;
-    public Integer total,id;
 }
