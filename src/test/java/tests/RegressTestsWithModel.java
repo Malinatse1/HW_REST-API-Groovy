@@ -19,15 +19,14 @@ public class RegressTestsWithModel extends TestBase  {
         RequestDataModel data = new RequestDataModel();
         data.setName(testData.firstName);
         data.setJob(testData.job);
-        ResponseDataModel response = Specs.request
+        ResponseDataModel response = given()
+                .spec(Specs.request)
                 .body(data)
                 .when()
                 .post("/users")
                 .then()
                 .log().status()
                 .log().body()
-
-//                .spec(Specs.responseSpec)
                 .statusCode(201)
                 .extract().as(ResponseDataModel.class);
         assertEquals(response.getName(), testData.firstName);
@@ -39,7 +38,8 @@ public class RegressTestsWithModel extends TestBase  {
     void updateUserTestWithLombok() {
         RequestDataModel data = new RequestDataModel();
         data.setName("Alfred");
-        ResponseDataModel response = Specs.request
+        ResponseDataModel response = given()
+                .spec(Specs.request)
                 .body(data)
                 .when()
                 .patch("/users/447")
@@ -57,7 +57,8 @@ public class RegressTestsWithModel extends TestBase  {
         RequestDataModel data = new RequestDataModel();
         data.setName(testData.firstName);
         data.setJob(testData.job);
-        Specs.request
+        given()
+                .spec(Specs.request)
                 .when()
                 .delete("users/447")
                 .then()
@@ -68,7 +69,8 @@ public class RegressTestsWithModel extends TestBase  {
 
     @Test
     void listUsersTest() {
-        Specs.request
+        given()
+                .spec(Specs.request)
                 .when()
                 .get("users?page=3")
                 .then()
