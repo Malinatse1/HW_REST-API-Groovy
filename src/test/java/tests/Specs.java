@@ -15,7 +15,6 @@ public class Specs {
             .log().uri()
             .log().headers()
             .log().body()
-            .filter(withCustomTemplates())
             .contentType(JSON)
             .baseUri("https://reqres.in")
             .basePath("/api");
