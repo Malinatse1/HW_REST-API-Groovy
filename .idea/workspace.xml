@@ -81,7 +81,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegressTestsWithModel">
+  <component name="RunManager" selected="Gradle.RegressTestsWithModel.createUserTest">
     <configuration name="RegressTestsWithModel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -199,8 +199,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegressTestsWithModel" />
         <item itemvalue="Gradle.RegressTestsWithModel.createUserTest" />
+        <item itemvalue="Gradle.RegressTestsWithModel" />
         <item itemvalue="Gradle.RegressTestsWithModel.deleteUserTest" />
         <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy (1)" />
         <item itemvalue="Gradle.RegressTestsWithModel.updateUserTestWithLombok" />
@@ -314,7 +314,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677435818960</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix tests">
+      <created>1678035094718</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678035094718</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix tests">
+      <created>1678035657113</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1678035657113</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnknownFeatures">
