@@ -1,12 +1,9 @@
 package tests;
-import io.qameta.allure.restassured.AllureRestAssured;
-import lombok.ResponseDataModel;
+import models.ResponseDataModel;
 import models.RequestDataModel;
 import org.junit.jupiter.api.Test;
 
-
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
