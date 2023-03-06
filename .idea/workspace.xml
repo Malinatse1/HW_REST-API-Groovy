@@ -5,8 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d44495a5-d284-4b7a-96ae-e21fd71272f4" name="Changes" comment="fix tests">
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Specs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Specs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Allure_Report.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Allure_TO.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Allure_TO_dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Allure_TO_results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Allure_results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Allure_steps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/GitHub.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Gradle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Idea.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/JUnit5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Java.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Jenkins.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Jenkins.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Selenide.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Selenoid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/Telegram_bot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_resources/video.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,18 +80,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/QA GURU/HW_REST-API-Groovy1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\QA GURU\HW_REST-API-Groovy1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\QA GURU\HW_REST-API-Groovy\src\test\java\resources\tpl" />
     </key>
@@ -201,10 +223,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.RegressTestsWithModel.createUserTest" />
-        <item itemvalue="Gradle.RegressTestsWithModel" />
-        <item itemvalue="Gradle.RegressTestsWithModel.deleteUserTest" />
-        <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy (1)" />
         <item itemvalue="Gradle.RegressTestsWithModel.updateUserTestWithLombok" />
+        <item itemvalue="Gradle.RegressTestsWithModel.singleUserTestWithGroovy (1)" />
+        <item itemvalue="Gradle.RegressTestsWithModel.deleteUserTest" />
+        <item itemvalue="Gradle.RegressTestsWithModel" />
       </list>
     </recent_temporary>
   </component>
@@ -336,7 +358,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678036692598</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix tests">
+      <created>1678036976912</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1678036976912</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix tests">
+      <created>1678037080806</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1678037080806</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="UnknownFeatures">
